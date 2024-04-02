@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="AppTheme.Fullscreen" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/Widget.AppTheme.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.Usbserialforandroidmaster.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+    <style name="Theme.Icce" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorAccent">@color/theme_primary</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="overlapAnchor">false</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+
+        <item name="android:actionBarStyle">@style/Theme.Icce.NoActionBar</item>
+
+    </style>
+    <style name="Theme.Icce.NoActionBar" >
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/transparentActionbar</item>
+    </style>
+    <style name="transparentActionbar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundStacked">@android:color/transparent</item>
+        <item name="android:backgroundSplit">@android:color/transparent</item>
+
+    </style>
+</resources>

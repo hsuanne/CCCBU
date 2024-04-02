@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_scan"
+        android:title="@string/bondCar"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_s_phy"
+        android:title="@string/commands"
+        app:showAsAction="always"/>
+</menu>
