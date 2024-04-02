@@ -47,9 +47,9 @@ public class Events {
 
         public UpdateDistanceEvent(byte[] raw) {
             distanceA = ByteUtils.twoBytesToInt(new byte[]{raw[0],raw[1]});
-            distanceB = ByteUtils.twoBytesToInt(new byte[]{raw[2],raw[3]});
-            distanceC = ByteUtils.twoBytesToInt(new byte[]{raw[4],raw[5]});
-            distanceD = ByteUtils.twoBytesToInt(new byte[]{raw[6],raw[7]});
+//            distanceB = ByteUtils.twoBytesToInt(new byte[]{raw[2],raw[3]});
+//            distanceC = ByteUtils.twoBytesToInt(new byte[]{raw[4],raw[5]});
+//            distanceD = ByteUtils.twoBytesToInt(new byte[]{raw[6],raw[7]});
         }
 
         public int getDistanceA() {
