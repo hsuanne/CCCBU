@@ -386,15 +386,15 @@ public class MainActivity extends AppCompatActivity {
         Log.v(LOG,"v1: "+value1 +" v2: "+value2+" v3: "+value3+" v4: "+value4);
         if(value1>value2){
             if(value3>value4){
-                drawSector(0);
+//                drawSector(0);
             }else{
-                drawSector(90);
+//                drawSector(90);
             }
         }else {
             if(value3>value4){
-                drawSector(270);
+//                drawSector(270);
             }else{
-                drawSector(180);
+//                drawSector(180);
             }
         }
         updateCircle(Math.min(Math.min(value1,value2),Math.min(value3,value4)));
