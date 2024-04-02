@@ -259,7 +259,6 @@ public class BleManager {
             public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
                 super.onCharacteristicChanged(gatt, characteristic);
                 Log.v(LOG,"onCharacteristicChanged");
-                Log.d("qwer", Arrays.toString(characteristic.getValue()));
                 Events.UpdateDistanceEvent event =new Events.UpdateDistanceEvent(characteristic.getValue());
                 EventBus.getDefault().post(event);
             }
