@@ -164,59 +164,60 @@
         android:layout_marginTop="280dp"
         tools:ignore="MissingConstraints"
         android:textSize="22sp" />
-    <com.dxjia.library.ImageTextButton
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        app:itb_bg="#88000000"
-        app:itb_icon="@drawable/start"
-        app:itb_radius="10dp"
-        app:itb_text="Start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/chart"
-        android:layout_marginTop="30dp"
-        view:itb_icon_position="top"></com.dxjia.library.ImageTextButton>
+<!--    <com.dxjia.library.ImageTextButton-->
+<!--        android:id="@+id/btn_start"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:itb_bg="#88000000"-->
+<!--        app:itb_icon="@drawable/start"-->
+<!--        app:itb_radius="10dp"-->
+<!--        app:itb_text="Start"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/chart"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        view:itb_icon_position="top"></com.dxjia.library.ImageTextButton>-->
 
-    <com.dxjia.library.ImageTextButton
-        android:id="@+id/btn_lock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        app:itb_bg="#88000000"
-        app:itb_icon="@drawable/lock"
-        app:itb_radius="10dp"
-        app:itb_text="Lock"
-        app:layout_constraintEnd_toStartOf="@+id/btn_start"
-        app:layout_constraintTop_toTopOf="@id/btn_start"
-        android:layout_marginRight="40dp"
-        view:itb_icon_position="top"></com.dxjia.library.ImageTextButton>
+<!--    <com.dxjia.library.ImageTextButton-->
+<!--        android:id="@+id/btn_lock"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:itb_bg="#88000000"-->
+<!--        app:itb_icon="@drawable/lock"-->
+<!--        app:itb_radius="10dp"-->
+<!--        app:itb_text="Lock"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btn_start"-->
+<!--        app:layout_constraintTop_toTopOf="@id/btn_start"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        view:itb_icon_position="top"></com.dxjia.library.ImageTextButton>-->
 
-    <com.dxjia.library.ImageTextButton
-        android:id="@+id/btn_alert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        app:itb_bg="#88000000"
-        app:itb_icon="@drawable/alert"
-        app:itb_radius="10dp"
-        app:itb_text="Alarm"
-        app:layout_constraintStart_toEndOf="@+id/btn_start"
-        app:layout_constraintTop_toTopOf="@id/btn_start"
-        android:layout_marginLeft="40dp"
-        view:itb_icon_position="top"></com.dxjia.library.ImageTextButton>
+<!--    <com.dxjia.library.ImageTextButton-->
+<!--        android:id="@+id/btn_alert"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:itb_bg="#88000000"-->
+<!--        app:itb_icon="@drawable/alert"-->
+<!--        app:itb_radius="10dp"-->
+<!--        app:itb_text="Alarm"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btn_start"-->
+<!--        app:layout_constraintTop_toTopOf="@id/btn_start"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        view:itb_icon_position="top"></com.dxjia.library.ImageTextButton>-->
 
     <ScrollView
         android:id="@+id/sv_wuart"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        app:layout_constraintTop_toBottomOf="@id/btn_alert"
+
         android:paddingTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:fillViewport="true" >
-
+        <!-- app:layout_constraintTop_toBottomOf="@id/btn_alert" -->
+        
         <TextView
             android:id="@+id/info"
             android:background="@color/shadow_center"

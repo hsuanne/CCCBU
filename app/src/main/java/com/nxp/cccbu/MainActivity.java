@@ -52,7 +52,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-import com.dxjia.library.ImageTextButton;
+//import com.dxjia.library.ImageTextButton;
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG = "MainActivity";
@@ -73,15 +73,15 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.chart)
     LineChart mChart;
-
-    @BindView(R.id.btn_start)
-    ImageTextButton mBtnStart;
-
-    @BindView(R.id.btn_lock)
-    ImageTextButton mBtnLock;
-
-    @BindView(R.id.btn_alert)
-    ImageTextButton mBtnAlert;
+//
+//    @BindView(R.id.btn_start)
+//    ImageTextButton mBtnStart;
+//
+//    @BindView(R.id.btn_lock)
+//    ImageTextButton mBtnLock;
+//
+//    @BindView(R.id.btn_alert)
+//    ImageTextButton mBtnAlert;
 
     @BindView(R.id.tv_distance)
     Button mDistance;
