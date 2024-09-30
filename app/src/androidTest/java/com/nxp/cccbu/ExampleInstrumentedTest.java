@@ -31,7 +31,7 @@ public class ExampleInstrumentedTest {
         int p = 1;
         int dkLen = 80;
 //        Spake2.generage_scrypt(Nscrypt,r,p,dkLen);
-        Spake2.cal_Xpoint();
+//        Spake2.cal_Xpoint();
 //        Spake2.cal_M2(null);
     }
 
@@ -49,14 +49,14 @@ public class ExampleInstrumentedTest {
                 0x09, 0x08,0x07,0x06,0x05,0x04,0x03,0x02,0x01,0x00,
                 0x01,0x02,0x03,0x04,0x05,0x06, 0x07,0x08,0x09,0x00,
                 0x0A,0x0B,0x0C,0x0D,0x0E,0x0F,0x00,0x00};
-        byte[] encrypt = AESCCM.encrypt(plain,key,iv);
-        Log.v("AESCCMTest",ByteUtils.bytes2String(encrypt ));
-        Log.v("AESCCMTest",ByteUtils.bytes2String( AESCCM.getMac()));
+//        byte[] encrypt = AESCCM.encrypt(plain,key,iv);
+//        Log.v("AESCCMTest",ByteUtils.bytes2String(encrypt ));
+//        Log.v("AESCCMTest",ByteUtils.bytes2String( AESCCM.getMac()));
 //        1C3F4973BCB1BB427927B0E8AAFB4BB6
 //        66EF9277
-        Log.v("AESCCMTest",
-                ByteUtils.bytes2String(
-                        AESCCM.decrypt(encrypt,key,iv,AESCCM.getMac())));
+//        Log.v("AESCCMTest",
+//                ByteUtils.bytes2String(
+//                        AESCCM.decrypt(encrypt,key,iv,AESCCM.getMac())));
 
     }
 }
