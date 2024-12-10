@@ -8,5 +8,6 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="grant_permission">grant permission please</string>
     <string name="bondCar">Bond Car</string>
+    <string name="setting">Setting</string>
     <string name="commands">Commands</string>
 </resources>
