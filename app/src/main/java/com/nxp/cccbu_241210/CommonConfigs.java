@@ -12,7 +12,7 @@
 /*   NXP must not be liable for any loss or damage arising from its use.              */
 /*                                                                                    */
 /*====================================================================================*/
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
 import java.nio.ByteBuffer;
 

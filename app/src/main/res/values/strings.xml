@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_title">UWB Demo</string>
-    <string name="app_name">UWB Demo</string>
+    <string name="app_name">UWB 241210</string>
     <string name="devices">USB Devices</string>
     <string name="title_activity_main_board">UWB Demo</string>
     <string name="dummy_button">Dummy Button</string>

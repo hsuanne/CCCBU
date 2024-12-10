@@ -1,4 +1,4 @@
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
 import org.junit.Test;
 
