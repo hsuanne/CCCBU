@@ -1,7 +1,6 @@
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
 import android.app.Application;
-import android.content.Context;
 
 public class CCCBU extends Application {
     private static CCCBU thiz;

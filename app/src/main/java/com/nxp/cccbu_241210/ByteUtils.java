@@ -1,6 +1,4 @@
-package com.nxp.cccbu;
-
-import android.widget.TableRow;
+package com.nxp.cccbu_241210;
 
 import androidx.annotation.NonNull;
 

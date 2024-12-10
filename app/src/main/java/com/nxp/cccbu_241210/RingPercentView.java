@@ -1,22 +1,17 @@
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Paint.FontMetrics;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
-import android.graphics.PathEffect;
-import android.graphics.Path.Direction;
 import android.graphics.RectF;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;

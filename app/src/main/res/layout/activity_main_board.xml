@@ -40,7 +40,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"/>
 
-        <com.nxp.cccbu.RingPercentView
+        <com.nxp.cccbu_241210.RingPercentView
             android:id="@+id/sector_out"
             android:layout_width="260dp"
             android:layout_height="260dp"
@@ -49,9 +49,9 @@
             android:visibility="gone"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true">
-        </com.nxp.cccbu.RingPercentView>
+        </com.nxp.cccbu_241210.RingPercentView>
 
-        <com.nxp.cccbu.RingPercentView
+        <com.nxp.cccbu_241210.RingPercentView
             android:id="@+id/sector_middle"
             android:layout_width="180dp"
             android:layout_height="180dp"
@@ -60,9 +60,9 @@
             android:visibility="gone"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true">
-        </com.nxp.cccbu.RingPercentView>
+        </com.nxp.cccbu_241210.RingPercentView>
 
-        <com.nxp.cccbu.RingPercentView
+        <com.nxp.cccbu_241210.RingPercentView
             android:id="@+id/sector_inner"
             android:layout_width="120dp"
             android:layout_height="120dp"
@@ -71,7 +71,7 @@
             android:visibility="gone"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true">
-        </com.nxp.cccbu.RingPercentView>
+        </com.nxp.cccbu_241210.RingPercentView>
 
         <ImageView
             android:id="@+id/circle_out"
