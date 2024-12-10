@@ -1,11 +1,10 @@
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;

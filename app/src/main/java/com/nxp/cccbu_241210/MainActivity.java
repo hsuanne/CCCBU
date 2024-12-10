@@ -1,19 +1,14 @@
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
 import static android.content.pm.PackageManager.PERMISSION_GRANTED;
-
-import static com.nxp.cccbu.CommonConfigs.uwbInitiationTime;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
-import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -26,6 +21,7 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,7 +40,6 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -202,6 +197,42 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
+        if (id == R.id.menu_setting) {
+            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+            dialogBuilder.setTitle("當前倍數: " + CommonConfigs.rangingInterval / 96);
+            View view = getLayoutInflater().inflate(R.layout.dialog_with_edittext, null);
+            dialogBuilder.setView(view);
+            // 設定確認按鈕
+            dialogBuilder.setPositiveButton("確定", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    // 在這裡處理確認按鈕的點擊事件
+                    EditText editText = view.findViewById(R.id.editText);
+                    String customInterval = String.valueOf(editText.getText());
+                    CommonConfigs.rangingInterval = Integer.parseInt(customInterval) * 96;
+                    System.out.println("anne: " + CommonConfigs.rangingInterval);
+                }
+            });
+
+            // 設定取消按鈕
+            dialogBuilder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    // 在這裡處理取消按鈕的點擊事件
+                    dialog.dismiss();
+                }
+            });
+            dialogBuilder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                @Override
+                public void onDismiss(DialogInterface dialog) {
+
+                }
+            });
+            AlertDialog mDialog = dialogBuilder.create();
+            mDialog.show();
+            clearChart();
+            return true;
+        }
         if (id == R.id.menu_scan) {
             DeviceViewBuilder builder = new DeviceViewBuilder(this, mBle);
             builder.showDeviceView();

@@ -1,6 +1,6 @@
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
-import static com.nxp.cccbu.CommonConfigs.*;
+import static com.nxp.cccbu_241210.CommonConfigs.*;
 
 import android.content.Context;
 import android.os.Binder;
@@ -8,7 +8,6 @@ import android.util.Log;
 
 import com.nxp.uwb.UwbAdapter;
 import com.nxp.uwb.UwbConfigParameterBuilder;
-import com.nxp.uwb.UwbConfigParameterReturnStatus;
 import com.nxp.uwb.UwbParameterTLV;
 import com.nxp.uwb.extension.NxpUwbAdapter;
 import com.nxp.uwb.extension.NxpUwbCccConfigParameterBuilder;
@@ -17,7 +16,6 @@ import com.nxp.uwb.extension.NxpUwbDebugConfigParameterBuilder;
 import com.nxp.uwb.extension.NxpUwbDeviceCapabilityTlv;
 import com.nxp.uwb.extension.NxpUwbDeviceTimeStamp;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

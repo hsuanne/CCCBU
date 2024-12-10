@@ -1,7 +1,7 @@
 /**
  * Copyright 2016 Freescale Semiconductors, Inc.
  */
-package com.nxp.cccbu;
+package com.nxp.cccbu_241210;
 
 
 import android.os.Build;
